@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import TopWeather from "./components/TopWeather";
+import BottomWeather from "./components/BottomWeather";
 
 function App() {
 	const [data, setData] = useState({});
@@ -28,35 +30,10 @@ function App() {
 					type='text'
 				></input>
 			</div>
-			<div className='container'>
-				<div className='top'>
-					<div className='location'>
-						<p>{data.name}</p>
-					</div>
-					<div className='temp'>
-						{data.main ? <h1>{data.main.temp.toFixed()} C°</h1> : null}
-					</div>
-					<div className='description'>
-						{data.weather ? <h3>{data.weather[0].description}</h3> : null}
-					</div>
-				</div>
 
-				{data.name !== undefined && (
-					<div className='bottom'>
-						<div className='feels'>
-							{data.main ? <h3>{data.main.feels_like.toFixed()} C°</h3> : null}
-							<p>Feels like</p>
-						</div>
-						<div className='humidity'>
-							{data.main ? <h3>{data.main.humidity.toFixed()} %</h3> : null}
-							<p>Humidity</p>
-						</div>
-						<div className='wind'>
-							{data.wind ? <h3>{data.wind.speed.toFixed()} km/h</h3> : null}
-							<p>Wind</p>
-						</div>
-					</div>
-				)}
+			<div className='container'>
+				<TopWeather data={data} />
+				<BottomWeather data={data} />
 			</div>
 		</div>
 	);
