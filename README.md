@@ -69,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # 101295616_comp3123_labtest2
+
+How to use app
+
+To use app you should search something into the search bar and press enter
+
+and it will appear like this:
+![Screenshot](screenshot.png)
+
