@@ -13,6 +13,7 @@ function BottomWeather(props) {
 			</div>
 			<div className='wind'>
 				{props.data.wind ? <h3>{props.data.wind.speed.toFixed()} km/h</h3> : null}
+				{/* {props.data.weather ? <img src={`http://openweathermap.org/img/w/${props.data.weather[0].icon}.png`} alt='weather icon' /> : null} */}
 				<p>Wind</p>
 			</div>
 		</div>

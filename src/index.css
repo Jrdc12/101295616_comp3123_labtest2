@@ -101,3 +101,13 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
+.weather {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 16px;
+  margin: 3px auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 1rem;
+}
